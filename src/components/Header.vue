@@ -19,31 +19,28 @@ export default {
                 {
                     name: 'Curriculum',
                     route: '/curriculum',
+                },
+                {
+                    name: 'Contatti',
+                    route: '/contatti',
                 }
             ]
         }
     },
     methods: {
-        setActiveLink(link) {
-            this.activeLink = link;
-            let thingLink = `Il link è ${link}`
-            let thingLink2 = `L'ActiveLink è ${this.activeLink}`
-            console.log(thingLink)
-            console.log(thingLink2)
-        },
-        consolelog(thing) {
-            console.log(thing)
-        }
+
     },
     computed: {
         activeLink() {
             switch (this.$route.path) {
-                case '/home':
+                case '/':
                     return 0;
                 case '/about':
                     return 1;
                 case '/curriculum':
                     return 2;
+                case '/contatti':
+                    return 3;
                 default:
                     return 0;
             }
@@ -59,9 +56,7 @@ export default {
             <ul>
                 <li v-for="link, number in links"  :class="activeLink === number ? 'linkActive' : '' ">
                     <router-link class="routerLink" :to="link.route">
-                        <div>
-                            {{link.name}}
-                        </div>
+                        {{link.name}}
                     </router-link>
                 </li>
 

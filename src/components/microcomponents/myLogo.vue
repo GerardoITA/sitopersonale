@@ -1,6 +1,6 @@
 <template>
     <div class="myLogo">
-        <a href="">Gerardo Giusti</a>
+        <a href="/">Gerardo Giusti</a>
     </div>
 </template>
 
