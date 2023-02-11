@@ -30,12 +30,20 @@ $MyGrey: rgb(160, 160, 160);
 $LightGrey: rgb(200, 200, 200);
 $LighterGrey: rgb(240, 240, 240);
 
+/* Font */
+@font-face {
+    font-family: satisfactionFont;
+    src: url(../assets/Satisfaction.ttf);
+}
 //// General //// 
 html {
     font-size: 100%;
+    color: $MineShaft;
+    font-family: Arial, Helvetica, sans-serif;
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+

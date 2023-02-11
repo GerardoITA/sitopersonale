@@ -29,9 +29,16 @@ export default {
 
 <style scoped>
 .Page {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 30px;
+  }
+
+@media screen and (min-width: 1280px) {
+  .Page {
+    margin: 0 auto;
+    width: 1280px;
+
+  }
 }
 </style>
