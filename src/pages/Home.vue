@@ -1,5 +1,5 @@
 <script>
-import Header from './components/Header.vue'
+import Header from '../components/Header.vue'
 
 export default {
   name: "App",
@@ -15,11 +15,17 @@ export default {
   }
 }  
 </script>
-
 <template>
-<router-view/>
+<div class="Page">
+    <Header>
+    
+    </Header>
+    <main>
+        Home Template
+    </main>
+</div> 
 </template>
-
 <style lang="scss" scoped>
-@use './styles/general.scss' as *;
+@use '../styles/general.scss' as *;
+
 </style>
