@@ -22,7 +22,7 @@ export default {
     </Header>
     <main>
         <h2>Contatti</h2>
-        <p>Qui puoi trovare</p>
+        <p>Qui puoi trovare i miei contatti</p>
     </main>
 </div>
 </template>
